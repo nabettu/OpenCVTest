@@ -19,6 +19,8 @@
 		D53A7EF41974EC1800C79958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53A7EDC1974EC1800C79958 /* UIKit.framework */; };
 		D53A7EFC1974EC1800C79958 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D53A7EFA1974EC1800C79958 /* InfoPlist.strings */; };
 		D53A7EFE1974EC1800C79958 /* opencvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53A7EFD1974EC1800C79958 /* opencvTests.m */; };
+		D592999919757D8A006D8FE8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D592999819757D8A006D8FE8 /* opencv2.framework */; };
+		D592999C19757DEE006D8FE8 /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D592999B19757DEE006D8FE8 /* TopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		D53A7EF91974EC1800C79958 /* opencvTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "opencvTests-Info.plist"; sourceTree = "<group>"; };
 		D53A7EFB1974EC1800C79958 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D53A7EFD1974EC1800C79958 /* opencvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opencvTests.m; sourceTree = "<group>"; };
+		D592999819757D8A006D8FE8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../libs/ios/opencv2.framework; sourceTree = "<group>"; };
+		D592999A19757DEE006D8FE8 /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		D592999B19757DEE006D8FE8 /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D592999919757D8A006D8FE8 /* opencv2.framework in Frameworks */,
 				D53A7EDB1974EC1800C79958 /* CoreGraphics.framework in Frameworks */,
 				D53A7EDD1974EC1800C79958 /* UIKit.framework in Frameworks */,
 				D53A7ED91974EC1800C79958 /* Foundation.framework in Frameworks */,
@@ -96,6 +102,7 @@
 		D53A7ED71974EC1800C79958 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D592999819757D8A006D8FE8 /* opencv2.framework */,
 				D53A7ED81974EC1800C79958 /* Foundation.framework */,
 				D53A7EDA1974EC1800C79958 /* CoreGraphics.framework */,
 				D53A7EDC1974EC1800C79958 /* UIKit.framework */,
@@ -109,6 +116,8 @@
 			children = (
 				D53A7EE71974EC1800C79958 /* AppDelegate.h */,
 				D53A7EE81974EC1800C79958 /* AppDelegate.m */,
+				D592999A19757DEE006D8FE8 /* TopViewController.h */,
+				D592999B19757DEE006D8FE8 /* TopViewController.m */,
 				D53A7EEA1974EC1800C79958 /* Images.xcassets */,
 				D53A7EDF1974EC1800C79958 /* Supporting Files */,
 			);
@@ -241,6 +250,7 @@
 			files = (
 				D53A7EE91974EC1800C79958 /* AppDelegate.m in Sources */,
 				D53A7EE51974EC1800C79958 /* main.m in Sources */,
+				D592999C19757DEE006D8FE8 /* TopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +367,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tatsuaki/Application/ios/libs/ios,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "opencv/opencv-Prefix.pch";
 				INFOPLIST_FILE = "opencv/opencv-Info.plist";
@@ -370,6 +384,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/tatsuaki/Application/ios/libs/ios,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "opencv/opencv-Prefix.pch";
 				INFOPLIST_FILE = "opencv/opencv-Info.plist";
@@ -437,6 +455,7 @@
 				D53A7F031974EC1800C79958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53A7F041974EC1800C79958 /* Build configuration list for PBXNativeTarget "opencvTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +464,7 @@
 				D53A7F061974EC1800C79958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
